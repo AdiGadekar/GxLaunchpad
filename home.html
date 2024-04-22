@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>GalaxE Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="icon" href="https://launchpad.galaxe.com/theme/image.php/boost/theme/1698063047/favicon" type="image/x-icon">
 </head>
 <body>
@@ -22,19 +24,35 @@
         </div>
     </header>
 
+    <section id="image-slider" class="section">
+        <div class="container">
+            <div class="slider">
+                <div><img src="image\banner1.png" alt="Image 1"></div>
+                <div><img src="image\banner2.png" alt="Image 2"></div>
+                <div><img src="image\banner3.png" alt="Image 3"></div>
+            </div>
+            <button class="slider-btn prev-btn">Previous</button>
+            <button class="slider-btn next-btn">Next</button>
+        </div>
+    </section>
+
+
+
     <section id="home" class="section">
         <div class="container">
-            <h2>Welcome to our IT Solutions Company!</h2>
-            <p>We provide innovative IT solutions to businesses of all sizes.</p>
+            <h2>Welcome to our GalaxE Solutions Company!</h2>
+            <h3>We provide innovative IT solutions to businesses of all sizes.<h3>
+            <div><img src="image/Intro1.PNG" alt="Image 1"></div>
         </div>
     </section>
 
     <section id="about" class="section">
         <div class="container">
             <h2>About Us</h2>
-            <p>At our IT Solutions Company, we're committed to creating technology that makes life better for everyone, everywhere.</p>
-            <p>Our mission is to organize the world's information and make it universally accessible and useful.</p>
-            <p>We believe that by focusing on the user, everything else will follow. Our dedication to improving the lives of our users drives everything we do.</p>
+            <h3>Driving Transformation Since 1990</h3>
+            <p>Since its founding, GalaxE® remains dedicated to advancing the benefits of technology. As we continue that legacy and look to the future, a focus on business enablement through agile, cost efficient and effective integration of people, process and technology anchors our success. We revolutionize change in the costs of doing business that transform companies and their ability to leap beyond the competition.</p>
+            <img src="image/leadership1.PNG" alt="Image 1" id="image1">
+            <img src="image/leadership2.PNG" alt="Image 2" id="image2">
         </div>
     </section>
 
@@ -42,15 +60,58 @@
         <div class="container">
             <h2>Contact Us</h2>
             <p>Have questions or want to learn more about our IT solutions? Get in touch with us!</p>
-            <p>Email: contact@itsolutionscompany.com<br>Phone: +1 (123) 456-7890<br>Address: 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</p>
+            <p>EGalaxE® works with healthcare industry leaders as well as companies in financial services, retail, manufacturing, media, entertainment, and energy sectors. Our commitment to transformation extends to the communities, in which we do business, enabling expert consultants around the globe to transform and adapt to new economic opportunities.</p>
+            <div class="address-container">
+                <div class="address-item">
+                    <p><strong>Global Headquarters</strong></p>
+                    <p>270 Davidson Avenue,</p>
+                    <p>Somerset, NJ 08873</p>
+                    <p>(732) 868-0400</p>
+                </div>
+                <div class="address-item">
+                    <p><strong>Detroit Center of Excellence</strong></p>
+                    <p>1001 Woodward Ave., Suite 1200</p>
+                    <p>Detroit, MI 48226</p>
+                    <p>(313) 309-6600</p>
+                </div>
+                <div class="address-item">
+                    <p><strong>Hartford Innovation Center</strong></p>
+                    <p>City Place 1, 15th Floor</p>
+                    <p>Hartford, CT 06103</p>
+                    <p>(732) 868-0400</p>
+                </div>
+            </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 1500, // Adjust speed as needed
+                dots: true,
+                arrows: false
+            });
 
+            // Previous button click handler
+            $('.prev-btn').click(function(){
+                $('.slider').slick('slickPrev');
+            });
+
+            // Next button click handler
+            $('.next-btn').click(function(){
+                $('.slider').slick('slickNext');
+            });
+        });
+    </script>
    
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 IT Solutions Company. All rights reserved.</p>
+            <p>&copy; GalaxE Solutions Pvt Ltd Company. All rights reserved.</p>
         </div>
     </footer>
 </body>
