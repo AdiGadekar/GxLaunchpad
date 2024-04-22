@@ -1,0 +1,105 @@
+header {
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+header .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* change color on hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.section {
+    margin-left: 25%;
+    margin-right: 25%;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+h1 {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.section-header {
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.section-content {
+    padding: 10px;
+    display: none;
+}
+
+.sub-section {
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center; /* Align icons vertically in the center */
+}
+
+.message-icon {
+    width: 20px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust margin to control spacing */
+}
