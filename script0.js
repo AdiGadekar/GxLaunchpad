@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Set the username and password fields with pre-defined values
-    document.querySelector('.userInputs[type="email"]').value = "";
+    document.querySelector('.userInputs[type="email"]').value = "adigadekar@galaxe.com";
     document.querySelector('.userInputs[type="password"]').value = "Example@123";
 });
 
